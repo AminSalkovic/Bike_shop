@@ -1,0 +1,49 @@
+[
+    {
+       "id":7,
+       "name":"Road Bikes",
+       "imgUrl":"/imgs/mtb1.jpg",
+       "path":"/road-bikes",
+       "price":2000
+    },  
+    {
+       "id":8,
+       "name":"Mtb Bikes",
+       "imgUrl":"../imgs/mtb2.jpg",
+       "path":"/Mtb-bikes",
+       "price":3200
+
+     },
+    {
+       "id":9,
+       "name":"TT Bikes",
+       "imgUrl":"/imgs/mtb3.jpg",
+       "path":"/tt-bikes",
+       "price":5400
+
+     },
+     {
+        "id":10,
+        "name":"Cyclo cross Bikes",
+       "imgUrl":"/imgs/mtb4.jpg",
+       "path":"/cx-bikes",
+       "price":3400
+
+     },
+     {
+        "id":11,
+        "name":"City Bikes",
+        "imgUrl":"/imgs/mtb5.jpg",
+        "path":"/city-bikes",
+       "price":4300
+
+     },
+     {
+        "id":12,
+        "name":"Home Bikes",
+        "imgUrl":"/imgs/mtb6.jpg",
+        "path":"/home-bikes",
+       "price":3600
+
+     }
+]

@@ -1,16 +1,23 @@
 import {Button, Container,Nav, Navbar as NavbarBs} from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
 import * as AiIcons from 'react-icons/ai'
+import { useShoppingCart } from '../context/ShoppigCartContext'
 
 
 
 function Navbar(){
+     
+    const{openCart,cartQuantity}=useShoppingCart()
+     
    return(
        <NavbarBs sticky='top' className='bg-white shadow-sm mb-3'>
             <Container>
                <Nav className='me-auto'>
                     <Nav.Link to='/' as={NavLink}>
                         Home
+                    </Nav.Link>
+                    <Nav.Link to='/road-bikes' as={NavLink}>
+                        Store
                     </Nav.Link>
                     <Nav.Link to='/contact' as={NavLink}>
                         Contact
@@ -19,7 +26,7 @@ function Navbar(){
                         About Us
                     </Nav.Link>
                </Nav>
-               <Button  style={{width:'3rem',height:"3rem",position:'relative'}} >
+               <Button variant='secondary' onClick={openCart}  style={{width:'3rem',height:"3rem",position:'relative'}} >
                   <AiIcons.AiOutlineShoppingCart/>
                      <Container className="rounded-circle bg-danger d-flex align-items-center justify-content-center"
                      style={{
@@ -30,7 +37,7 @@ function Navbar(){
                          height:'1.5rem',
                          transform:'translate(25%,25%)'}}
                          >
-                        1
+                        {cartQuantity}
                      </Container>
                 </Button>
             </Container>

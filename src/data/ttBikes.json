@@ -1,0 +1,44 @@
+[
+    {
+       "id":13,
+       "name":"S-Works",
+       "imgUrl":"/imgs/itt1.jpg",
+       "path":"/road-bikes",
+       "price":15000
+    },  
+    {
+       "id":14,
+       "name":"Mtb Bikes",
+       "imgUrl":"../imgs/itt2.jpg",
+       "path":"/Mtb-bikes",
+       "price":12000
+     },
+    {
+       "id":15,
+       "name":"TT Bikes",
+       "imgUrl":"../imgs/itt3.jpg",
+       "path":"/tt-bikes",
+       "price":14500
+     },
+     {
+        "id":16,
+        "name":"Cyclo cross Bikes",
+        "imgUrl":"../imgs/itt4.jpg",
+       "path":"/cx-bikes",
+       "price":10300
+     },
+     {
+        "id":17,
+        "name":"City Bikes",
+        "imgUrl":"../imgs/itt5.jpg",
+        "path":"/city-bikes",
+        "price":6300
+     },
+     {
+        "id":18,
+        "name":"Home Bikes",
+        "imgUrl":"../imgs/itt6.jpg",
+        "path":"/home-bikes",
+        "price":6000
+     }
+]

@@ -14,7 +14,6 @@ const Store = () => {
                         src={item.imgUrl} 
                         style={{height:"200px",objectFit:'cover'}}
                     /> 
-                    
                        <h1 className='fs-2' style={{textAlign:'center',color:'gray'}}>{item.name}</h1>
                     </Card>
                </Link>
