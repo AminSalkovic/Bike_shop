@@ -1,0 +1,38 @@
+[
+    {
+       "id":1,
+       "name":"Road Bikes",
+       "imgUrl":"/imgs/bike1.jpg",
+       "path":"/road-bikes"
+    },  
+    {
+       "id":2,
+       "name":"Mtb Bikes",
+       "imgUrl":"../imgs/apple.jpg",
+       "path":"/Mtb-bikes"
+     },
+    {
+       "id":3,
+       "name":"TT Bikes",
+       "imgUrl":"/imgs/bananas.jpg",
+       "path":"/tt-bikes"
+     },
+     {
+        "id":4,
+        "name":"Cyclo cross Bikes",
+       "imgUrl":"/imgs/strawberries.jpg",
+       "path":"/cx-bikes"
+     },
+     {
+        "id":5,
+        "name":"City Bikes",
+        "imgUrl":"/imgs/blueberries.jpg",
+        "path":"/city-bikes"
+     },
+     {
+        "id":6,
+        "name":"Home Bikes",
+        "imgUrl":"/imgs/pears.jpg",
+        "path":"/home-bikes"
+     }
+]
