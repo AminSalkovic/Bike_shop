@@ -1,5 +1,5 @@
-import { NavLink } from 'react-router-dom'
-import { Container,Carousel,Nav,Navbar} from 'react-bootstrap'
+import { Link } from 'react-router-dom'
+import { Container,Carousel } from 'react-bootstrap'
 import carouselData from '../data/carousel.json'
 import Store from './Store'
 import Navbar2 from '../components/Navbar2'
@@ -19,6 +19,11 @@ const Home = () => {
         </Carousel>
         <Navbar2/>
         <Store/>
+        <Container style={{width:"100%",height:'640px'}}>
+          <Link to='/cx-bikes'>
+              <img src='/imgs/section2.jpg' style={{width:'100%',height:"100%",objectFit:"cover"}}/>
+          </Link>
+        </Container>
     </Container>
   </>
   )

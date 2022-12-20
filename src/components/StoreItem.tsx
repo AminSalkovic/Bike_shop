@@ -19,7 +19,6 @@ const StoreItem = ({id,path,imgUrl,name,price}:StoreItemsProps) => {
     
   return (
    <>   
-
          <Card className='h-100'>
             <Link to={path}>
              <Card.Img variant='top' 

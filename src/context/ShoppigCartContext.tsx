@@ -13,6 +13,7 @@ type CartItem={
 type ShoppingCartContext={
     openCart:()=>void
     closeCart:()=>void
+    scrollup:()=>void
     cartItems:CartItem[]
     getItemQuantity:(id:number)=>void
     increaseCartQuantity:(id:number)=>void
@@ -33,6 +34,12 @@ export function ShoppingCartProvider({children}:ShoppingCartProviderProps){
 
     const openCart=()=> setIsOpen(true)
     const closeCart=()=>setIsOpen(false)
+    const scrollup=()=>{
+      window.scrollTo({
+        top:0,
+        behavior:'smooth'
+      })
+    }
 
     const [cartItems,setCartItems]=useState<CartItem[]>([])
 
@@ -82,7 +89,7 @@ export function ShoppingCartProvider({children}:ShoppingCartProviderProps){
    
     return(
         <ShoppingCartContext.Provider value={{openCart,closeCart,cartItems,getItemQuantity,
-        increaseCartQuantity,decreaseCartQuantity,removeFromCart,cartQuantity}}>
+        increaseCartQuantity,decreaseCartQuantity,removeFromCart,cartQuantity,scrollup}}>
           {children}
          <ShoppingCart isOpen={isOpen}/>
         </ShoppingCartContext.Provider>
