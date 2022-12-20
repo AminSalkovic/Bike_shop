@@ -3,14 +3,14 @@
        "id":1,
        "name":"S-Works",
        "imgUrl":"/imgs/road1.jpg",
-       "path":"/road-bikes",
+       "path":"/trek",
        "price":5200
     },  
     {
        "id":2,
        "name":"Mtb Bikes",
        "imgUrl":"../imgs/road2.jpg",
-       "path":"/Mtb-bikes",
+       "path":"/trek",
        "price":7300
      },
     {

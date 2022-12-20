@@ -7,16 +7,15 @@ const Home = () => {
   return (
     <>
     <Container>
-        <Carousel>
+        <Carousel variant='dark'>
           {carouselData.map((item)=>{
-              return (
-                  <Carousel.Item key={item.id} interval={1500}>
-                        <img style={{width:'100%',height:'520px',objectFit:'cover'}}
-                        
+            return (
+              <Carousel.Item key={item.id} interval={1500}>
+                        <img style={{width:'100%',height:'520px',objectFit:'contain'}}
                         src={item.imgUrl}/>
-                    </Carousel.Item>
+              </Carousel.Item>
             )
-        })}
+          })}
         </Carousel>
         <Navbar2/>
         <Store/>

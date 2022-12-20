@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom"
 const Navbar2 = () => {
   return (
     <Navbar bg="dark" variant="dark">
-    <Container>
     <Nav className='me-auto'>
           <Nav.Link to='/road-bikes' as={NavLink}>
               ROAD BIKES
@@ -21,7 +20,6 @@ const Navbar2 = () => {
                HOME BIKES
           </Nav.Link>
         </Nav>
-    </Container>
   </Navbar> 
   )
 }

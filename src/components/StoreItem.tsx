@@ -1,4 +1,5 @@
 import {Card,Container,Button} from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import { useShoppingCart } from '../context/ShoppigCartContext'
 import { formatCurrency } from '../utilities/formatCurrency'
 
@@ -17,12 +18,15 @@ const StoreItem = ({id,path,imgUrl,name,price}:StoreItemsProps) => {
     const quantity=getItemQuantity(id)
     
   return (
-   <>
+   <>   
+
          <Card className='h-100'>
+            <Link to={path}>
              <Card.Img variant='top' 
                  src={imgUrl} 
                  style={{height:"220px",objectFit:'none'}}
-             /> 
+                 /> 
+            </Link>
             <Card.Body className='d-flex flex-column'>
                 <Card.Title className='d-flex justify-content-space-between align-items-baseline mb-4'>
                     <Container className='fs-2'>{name}</Container>
