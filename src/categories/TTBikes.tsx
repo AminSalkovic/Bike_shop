@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar2 from '../components/Navbar2'
 import storeItems from '../data/ttBikes.json'
-import StoreItem from '../components/StoreItem'
+import {StoreItem} from '../components/StoreItem'
 
 import { Col,Container,Row} from 'react-bootstrap'
 const TTBikes = () => {

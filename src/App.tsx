@@ -9,9 +9,9 @@ import MtbBikes from './categories/MtbBikes'
 import { ShoppingCartProvider } from './context/ShoppigCartContext'
 import TTBikes from './categories/TTBikes'
 import CxBikes from './categories/CxBikes'
-import Trek from './categories/Trek'
 import Futer from './components/Futer'
 import HomeBikes from './categories/HomeBikes'
+
 const App = () => {
   return (
     <ShoppingCartProvider>
