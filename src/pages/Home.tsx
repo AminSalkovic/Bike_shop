@@ -10,7 +10,7 @@ const Home = () => {
         <Carousel variant='dark'>
           {carouselData.map((item)=>{
             return (
-              <Carousel.Item key={item.id} interval={1500}>
+              <Carousel.Item key={item.id} interval={1200}>
                         <img style={{width:'100%',height:'520px',objectFit:'contain'}}
                         src={item.imgUrl}/>
               </Carousel.Item>
