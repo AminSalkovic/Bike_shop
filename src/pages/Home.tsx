@@ -21,7 +21,7 @@ const Home = () => {
         <Store/>
         <Container style={{width:"100%",height:'640px'}}>
           <Link to='/cx-bikes'>
-              <img src='/imgs/section2.jpg' style={{width:'100%',height:"100%",objectFit:"cover"}}/>
+              <img src='/imgs/section2.jpg' style={{width:'100%',height:"100%",objectFit:"contain"}}/>
           </Link>
         </Container>
     </Container>

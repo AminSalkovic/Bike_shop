@@ -16,7 +16,7 @@ const Futer = () => {
   return (
     <>
      <div style={{backgroundColor:"black",
-     height:'200px',
+     height:'80px',
      marginTop:'10px',
      display:'flex',
      justifyContent:'space-evenly',
@@ -39,9 +39,15 @@ const Futer = () => {
                 <BiIcons.BiArrowToTop/>
           </Button>
      </div>
-     <div>
+     <div style={{backgroundColor:"black",
+     height:'80px',
+     display:'flex',
+     justifyContent:'space-evenly',
+     alignItems:'center',
+     color:'gray'
+     }}>
         {storeItems.map((el)=>
-          <Link to={el.path}>
+          <Link key={el.id} to={el.path} style={style}>
             {el.name}
           </Link>
         )}
